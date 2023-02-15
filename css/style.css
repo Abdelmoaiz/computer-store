@@ -1,0 +1,443 @@
+/*regolar font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+a{
+    text-decoration: none;
+}
+/*utality classes*/
+
+.bg-drak{
+    background-color: #252A34;
+    color: #fff;
+
+}
+.text-primary{
+    color:#ff2a63;
+}
+.text-center{
+    text-align: center;
+}
+.l-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.m-heading{
+    font-size: 2rem;
+}
+.lead{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.py-1{
+    padding: 1.5rem 0;
+}
+.p-1{
+    padding: 2rem;
+}
+.h1-style{
+    width:250px;
+    margin:auto;
+    color:#7a7a7a;
+     ont-weight:800;
+     box-shadow:10px 10px 5px #333;
+}
+.btn{
+    background-color: rgb(0, 255, 255,0.5);
+    color: rgb(241, 234, 234);
+    border-radius: 5px;
+    padding: .5rem 1.5rem;
+    margin-top: 1rem;
+
+}
+.btn-dark{
+    background-color: #252A34;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #ff2a63;
+}
+.bg-light{
+    background-color: #eaeaea;
+    color: #252A34;
+    padding: 2rem;
+}
+.bg-dark{
+    background-color: #252A34;
+    color: #fff;
+}
+.bg-primary{
+    background-color: rgb(0, 255, 255);
+    color: #fff;
+}
+.box-shadow{
+    box-shadow: 0 0 2px #252A34;
+}
+ul{
+    list-style: none;
+}
+/*section navbar*/
+header .content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+@media (max-width:787px) {
+    header .content-header{
+        flex-direction: column;
+    }
+}
+header .logo a{
+    width: 60px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #7a7d7d;
+    font-family: 'Pinyon Script', cursive;
+
+}
+@media (max-width:767px) {
+    header .logo a{
+        font-size: 1rem;
+    }
+}
+header ul{
+    list-style:none;
+    display: flex;
+}
+header ul li a{
+    color: #fff;
+    padding: 1rem;
+}
+@media (max-width:767px) {
+    header ul li a{
+        font-size: 12px;
+        padding: 10px
+    }
+}
+header ul li a:hover{
+    background-color: rgb(0, 255, 255,0.5);
+    border-radius: 10px;
+}
+main{
+    background: #252A34 url(https://www.almaal.org/wp-content/uploads/2020/07/%D9%85%D8%AD%D9%84-%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+main .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0,0,0,.8);
+}main .main-content h1{
+    font-size: 36px;
+}
+@media (max-width:767px) {
+    main{
+        height: 50vh;
+        color: #fff;
+    }
+    main .main-content{
+        height: 50vh;
+    }
+    main .main-content h1{
+        font-size: 20px;
+    }
+}
+
+    
+
+/* programs */
+.programs,.phone{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f2f2f2;
+}
+.programs .program-content,.phone .phone-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:20px;
+    margin-top: 100px;
+}
+.programs .program-content .card,.phone .phone-content .card{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: -10px -10px 5px #7a7d7d;
+}
+.programs .program-content .card img,.phone .phone-content .card img{
+    max-width: 100%;
+    
+}
+.programs .program-content .card h3{
+    text-align: center;
+}
+.programs .program-content .card p,.phone .phone-content .card p{
+    padding: 10px;
+    text-align: justify; 
+}
+.study{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.study h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #7a7d7d;
+}
+.study .content-study{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+@media (max-width:991px){
+    .study .content-study{
+        flex-direction: column;
+        text-align: center;
+        
+       
+    }
+}
+.study .content-study img{
+    max-width: 500px;
+    box-shadow: -10px -10px 5px #7a7d7d;
+}
+@media (max-width:991px){
+    .programs .program-content .card{
+        margin: auto;
+    }
+    .study .content-study img{
+        max-width: 500px;
+        margin: auto;
+    }
+    .study .content-study .info{
+        margin:50px auto -120px auto;
+        
+    }
+    
+}
+.study .content-study .info{
+    flex-basis: 500px;
+}
+.study .content-study .info p{
+    text-align: justify;
+}
+@media (max-width:767px){
+    .study .content-study .info{
+        margin: 50px auto auto;
+    }
+    .study .content-study img{
+        max-width: 300px;
+        margin: auto;
+    }
+}
+/*about*/
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+#about .about-content div,
+#about .about-content img{
+    flex: 1;
+}
+#about .about-content div{
+    text-align: justify;
+}
+hr{
+    width: 50%;
+    background-color: aqua;
+    display: inline-block;
+    margin: 50px 0 20px 0;
+}
+#about .about-content img{
+    max-width: 400px;
+    margin-left: 1.5rem;
+    border: 5px solid #fff;
+    box-shadow: 10px 10px 5px #7a7d7d;
+}
+@media (max-width:767px){
+    #about .about-content p:first-of-type{
+        margin-top: 50px;
+    }
+}
+
+/*show*/
+.bg-show{
+    background: url(https://tijaratuna.com/wp-content/uploads/2020/06/unnamed-2-512x300.jpg);
+}
+/* cta */
+#cta{
+    /* background: url(https://tijaratuna.com/wp-content/uploads/2020/06/unnamed-2-512x300.jpg) no-repeat center center/cover; */
+    color: #fff;
+    width: 100%;
+    background-color: rgb(0,0,0,.6 );
+}
+#cta .cta-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+#cta .cta-content p{
+    text-align: justify;
+    
+}
+@media (max-width:767px){
+    #cta .cta-content .lead{
+        margin: 50px 0;
+    }
+}
+/*desgin*/
+.desgin{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.desgin .content-desgin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+@media (max-width:767px){
+    .desgin .content-desgin{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.desgin .content-desgin .info{
+    flex-basis: 500px;
+}
+.desgin .content-desgin .info p{
+    text-align: justify;
+}
+.desgin .content-desgin img{
+    max-width:500px;
+    box-shadow: 10px 10px 5px #7a7d7d;
+}
+
+@media (max-width:991px){
+    .desgin .content-desgin img{
+        display: none;
+    }
+    .desgin .content-desgin{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width:767px){
+    .desgin .content-desgin img{
+        display: block;
+        max-width:300px;
+        margin: 30px auto;
+    }
+}
+
+/*contact*/
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contact .content-contact{
+    margin-top: 100px;
+}
+.contact .content-contact .linkes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.contact .content-contact .linkes ul{
+    padding:0 50px;
+}
+.contact .content-contact .linkes ul li{
+    font-size: 20px;
+    color: #777;
+    font-weight: bold;
+}
+@media (max-width:767px){
+    .contact .content-contact .linkes{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
+@media (max-width:767px){
+    .contact .content-contact .linkes ul{
+        margin-bottom: 50px;
+        
+        
+    }
+}
+.contact .content-contact .linkes ul li a{
+    font-size: 20px;
+    color: #777;
+    font-weight: bold;
+}
+.contact .content-contact .social i{
+    margin-top: 30%;
+    padding-left: 10px;
+}
+.contact .content-contact .social i:first-of-type{
+    color: #ff2a63;
+}
+.contact .content-contact .social i:nth-child(2){
+    color: #085cd8;
+}
+.contact .content-contact .social i:last-child{
+    color: #2ad4ff;
+}

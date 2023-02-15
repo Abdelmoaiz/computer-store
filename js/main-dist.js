@@ -1,0 +1,1 @@
+for($("#navbar a, .btn").on("click",(function(n){if(""!==this.hash){n.preventDefault();const r=this.hash;$("html, body").animate({scrollTop:$(r).offset().top-100},800)}})),myFriend=[1,2,3,"sdjas","hdkjs"],r=0;r<myFriend.length;r++)"string"==typeof myFriend[r]&&console.log(myFriend[r]);

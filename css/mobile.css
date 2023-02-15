@@ -1,0 +1,30 @@
+/*mobile*/
+/*utality classis*/
+.l-heading{
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.lead{
+    font-size: 1rem;
+    line-height: 1.2;
+}
+#navbar{
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+#navbar .logo{
+    margin-bottom: 1rem;
+}
+/*about*/
+#about .about-content{
+    display: block;
+    text-align: center;
+}
+/*about*/
+#about .about-content img{
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+}
+#programs .boxes{
+    flex-direction: column;
+}
